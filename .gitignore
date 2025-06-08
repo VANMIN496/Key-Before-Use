@@ -47,3 +47,12 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Check Out My Script Hub!😎",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/VANMIN496/BlakcHubScript/refs/heads/main/README.md"))()
+
+   end,
+})
+
+
