@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Key System",
+   Name = "BlakcHubHello",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Loaded",
    LoadingSubtitle = "Key System",
@@ -26,11 +26,11 @@ local Window = Rayfield:CreateWindow({
 
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Before Play Game Need",
-      Subtitle = " Enter Key",
+      Title = "Before Use My Script Game Need",
+      Subtitle = "Enter (Hello)",
       Note = "- Hello -", -- Use this to tell the user how to get a key
       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
@@ -41,7 +41,7 @@ local Tab = Window:CreateTab("Click", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Me")
 
 local Button = Tab:CreateButton({
-   Name = "Click Me!😎",
+   Name = "Destroy With Never😎",
    Callback = function()
   Rayfield:Destroy()
    end,
@@ -51,7 +51,7 @@ local Button = Tab:CreateButton({
    Name = "Check Out My Script Hub!😎",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/VANMIN496/BlakcHubScript/refs/heads/main/README.md"))()
-
+   Rayfield:Destroy()
    end,
 })
 
